@@ -20,6 +20,7 @@ Quick start
         'utents',
     ]
 
+
 2. Include the 'utents' URLconf in your project urls.py like this::
 
     path('', include(('utents.urls', 'utents'), namespace="utents")),
@@ -30,3 +31,16 @@ Quick start
    to create the models (you'll need the Admin app enabled).
 
 5. Visit http://127.0.0.1:8000 to see the website
+
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+HOW TOs
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+1. redirect to another page after login:
+    current: ""
+    change in 'apps.py' the parameter, added
+    in settings by this file, 
+    'LOGIN_REDIRECT_URL' to the page you want

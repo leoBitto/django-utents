@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form method="post" class="container m-5 p-5 justify-content-center ">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type = "submit" class="btn btn-lg btn-primary">Login</button>
+
+
+</form>
+
+
+{% endblock content %}
